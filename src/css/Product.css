@@ -1,14 +1,3 @@
-.product__list {
-  width: 30%;
-  height: 90vh;
-  border: 1px solid rgb(196, 185, 185);
-  border-radius: 5px;
-  background: rgba(255, 255, 255, 0.3);
-}
-.sub__header {
-  text-align: center;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
-}
 .score {
   margin-right: 10%;
 }
