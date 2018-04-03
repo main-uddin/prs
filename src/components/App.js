@@ -3,7 +3,7 @@ import AppBar from 'material-ui/AppBar'
 import Productview from './Productview'
 import Sidebar from './Sidebar'
 
-// import '../css/App.css'
+import '../css/App.css'
 
 class App extends Component {
   state = {
@@ -18,7 +18,7 @@ class App extends Component {
       <div className='App'>
         <AppBar
           className='menu__bar'
-          title='Product Review System'
+          title='Project Name Required'
           iconClassNameRight='muidocs-icon-navigation-expand-more'
           onLeftIconButtonClick={this.handleSidebar}
         />
@@ -42,6 +42,7 @@ class App extends Component {
     })
   }
   childData = e => {
+    console.log(e)
     this.setState({
       showProductDetails: e
     })

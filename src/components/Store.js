@@ -1,49 +1,49 @@
 import { observable } from 'mobx'
 
-import cocacola from '../images/cocacola.png'
-import pepsi from '../images/pepsi.png'
-import sprite from '../images/sprite.png'
-import pranup from '../images/pranup.png'
-import sevenup from '../images/7up.png'
-import mountaindew from '../images/mountaindew.png'
-const cocacolaImg = window.btoa(cocacola)
-const pepsiImg = window.btoa(pepsi)
-const spriteImg = window.btoa(sprite)
-const pranupImg = window.btoa(pranup)
-const sevenupImg = window.btoa(sevenup)
-const mountaindewImg = window.btoa(mountaindew)
+import screamingeagle from '../images/screaming-eagle.png'
+import ChateauMargaux from '../images/Chateau-Margaux.png'
+import absolutvodka from '../images/absolut-vodka.png'
+import greygoose from '../images/grey-goose.png'
+import russianstandard from '../images/russian-standard.png'
+import pinnaclevodka from '../images/pinnacle-vodka.png'
+const screamingeagleImg = window.btoa(screamingeagle)
+const ChateauMargauxImg = window.btoa(ChateauMargaux)
+const absolutvodkaImg = window.btoa(absolutvodka)
+const greygooseImg = window.btoa(greygoose)
+const russianstandardImg = window.btoa(russianstandard)
+const pinnaclevodkaImg = window.btoa(pinnaclevodka)
 
 const Store = {
   ProductArr: [
     {
       id: 1,
-      name: 'coca-cola',
-      img: cocacolaImg
+      name: 'screaming-eagle',
+      img: screamingeagleImg
     },
     {
       id: 2,
-      name: 'Pepsi',
-      img: pepsiImg
+      name: 'Chateau-Margaux',
+      img: ChateauMargauxImg
     },
     {
       id: 3,
-      name: 'sprite',
-      img: spriteImg
+      name: 'absolut-vodka',
+      img: absolutvodkaImg
     },
     {
       id: 4,
-      name: 'pran-up',
-      img: pranupImg
+      name: 'grey-goose',
+      img: greygooseImg
     },
     {
       id: 5,
-      name: '7up',
-      img: sevenupImg
+      name: 'russian-standard',
+      img: russianstandardImg
     },
     {
       id: 6,
-      name: 'mountain-dew',
-      img: mountaindewImg
+      name: 'pinnacle-vodka',
+      img: pinnaclevodkaImg
     }
   ]
 }

@@ -30,7 +30,7 @@
    height: 8vh;
 }
 .card__text__p {
-   overflow: scroll;
+   overflow: auto;
    width: 100%;
    height: 10vmin;
    box-sizing: border-box;

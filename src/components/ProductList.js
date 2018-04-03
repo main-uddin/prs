@@ -3,6 +3,7 @@ import { observer } from 'mobx-react'
 import { List, ListItem } from 'material-ui/List'
 import TextField from 'material-ui/TextField'
 import Avatar from 'material-ui/Avatar'
+import Chip from 'material-ui/Chip'
 
 // import '../css/Product.css'
 import Store from './Store'
@@ -24,27 +25,28 @@ class ProductList extends Component {
                 secondaryText={<p>{Date().split(' ', 4).join(' - ')}</p>}
                 leftAvatar={<Avatar src={window.atob(e.img)} />}
                 rightAvatar={
-                  <p className='score'>score:<span>{this.state.score}</span></p>
+                  <p className='score'>
+                    <Chip>{`Score: ${this.state.score}`}</Chip>
+                  </p>
                 }
-                onClick={this.handleProductView}
+                onClick={() => {
+                  const image = window.atob(e.img)
+                  const name = e.name.toUpperCase()
+                  const score = this.state.score
+                  const productObj = {
+                    image: image,
+                    name: name,
+                    score: score
+                  }
+                  this.props.data('true')
+                  this.props.productData(productObj)
+                }}
               />
             </List>
           ))}
         </div>
       </div>
     )
-  }
-  handleProductView = e => {
-    const image = window.btoa(e.target.childNodes[0].attributes.src.nodeValue)
-    const name = e.target.childNodes[2].innerText
-    const score = e.target.childNodes[1].firstChild.data
-    const productObj = {
-      image: image,
-      name: name,
-      score: score
-    }
-    this.props.data('true')
-    this.props.productData(productObj)
   }
 }
 export default observer(ProductList)

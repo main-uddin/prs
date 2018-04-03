@@ -1,26 +1,3 @@
-.product_root {
-  display: flex;
-  width: 100%;
-  height: 90vh;
-  background-color: #fff;
-}
-.product__sidebar {
-  width: 50%;
-  height:100%;
-  border:1px solid rgb(196, 185, 185);
-  border-radius:5px;
-  background: rgba(255, 255, 255, 0.3);
-}
-.product__showcard {
-  width:50%;
-  height:100%;
-  border-radius:5px;
-  margin-top: 0%;
-  margin-right: 30%;
-}
-.product__list {
-  width: 100%;
-}
 .score {
   margin-right: 10%;
 }
