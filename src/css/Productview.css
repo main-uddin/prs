@@ -9,17 +9,18 @@
   height: 10vh
 } */
 .card__main {
-  position: relative;
+  position: absolute;
   height: calc(100vh - 64px);
   width: 30%;
-  left: 30%;
+  left: 33%;
+  display: inline-block;
+  margin: 0
 } 
 .card__img {
   max-height: 50vh;
   max-width: 90%;
 } 
 .card__action {
-   /* position: absolute; */
    justify-Content: center;
    display: flex;
    align-items: center;

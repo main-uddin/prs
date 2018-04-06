@@ -38,7 +38,7 @@ class ProductList extends Component {
                     name: name,
                     score: score
                   }
-                  this.props.data('true')
+                  this.props.data(true)
                   this.props.productData(productObj)
                 }}
               />
