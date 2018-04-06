@@ -45,11 +45,11 @@ class Productview extends Component {
           </p>
         </CardText>
         <CardActions className='card__action' style={actionStyle}>
-          <FlatButton label='Back' />
-          <FlatButton label='Rate' />
+          <FlatButton label='Rate' onClick={this.showDialogBox} />
         </CardActions>
       </Card>
     )
   }
+  showDialogBox = () => this.props.dialogData(true)
 }
 export default Productview

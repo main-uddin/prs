@@ -6,44 +6,38 @@ import absolutvodka from '../images/absolut-vodka.png'
 import greygoose from '../images/grey-goose.png'
 import russianstandard from '../images/russian-standard.png'
 import pinnaclevodka from '../images/pinnacle-vodka.png'
-const screamingeagleImg = window.btoa(screamingeagle)
-const ChateauMargauxImg = window.btoa(ChateauMargaux)
-const absolutvodkaImg = window.btoa(absolutvodka)
-const greygooseImg = window.btoa(greygoose)
-const russianstandardImg = window.btoa(russianstandard)
-const pinnaclevodkaImg = window.btoa(pinnaclevodka)
 
 const Store = {
   ProductArr: [
     {
       id: 1,
       name: 'screaming-eagle',
-      img: screamingeagleImg
+      img: window.btoa(screamingeagle)
     },
     {
       id: 2,
       name: 'Chateau-Margaux',
-      img: ChateauMargauxImg
+      img: window.btoa(ChateauMargaux)
     },
     {
       id: 3,
       name: 'absolut-vodka',
-      img: absolutvodkaImg
+      img: window.btoa(absolutvodka)
     },
     {
       id: 4,
       name: 'grey-goose',
-      img: greygooseImg
+      img: window.btoa(greygoose)
     },
     {
       id: 5,
       name: 'russian-standard',
-      img: russianstandardImg
+      img: window.btoa(russianstandard)
     },
     {
       id: 6,
       name: 'pinnacle-vodka',
-      img: pinnaclevodkaImg
+      img: window.btoa(pinnaclevodka)
     }
   ]
 }
