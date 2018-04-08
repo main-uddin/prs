@@ -5,7 +5,7 @@ import TextField from 'material-ui/TextField'
 import Avatar from 'material-ui/Avatar'
 import Chip from 'material-ui/Chip'
 
-// import '../css/Product.css'
+import '../css/Product.css'
 import Store from './Store'
 
 class ProductList extends Component {
@@ -14,9 +14,11 @@ class ProductList extends Component {
   }
   render () {
     return (
-      <div className='product_root'>
-        <div className='product__sidebar'>
+      <div className='product__sidebar'>
+        <div className='search__field'>
           Search: <TextField floatingLabelText='Search Product' />
+        </div>
+        <div className='product__list__pos'>
           {Store.ProductArr.map(e => (
             <List className='product__list'>
               <ListItem
@@ -50,3 +52,5 @@ class ProductList extends Component {
   }
 }
 export default observer(ProductList)
+
+// Store.dialogDataArr.push(productObj)

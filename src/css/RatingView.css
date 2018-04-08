@@ -1,0 +1,12 @@
+.rating__img {
+  width: 15vw;
+  height: 30vh
+}
+.rating__checkbox {
+  display: flex;
+  width: 2vw
+}
+.dialog__container_child {
+  display: flex;
+  justify-content: space-between
+}

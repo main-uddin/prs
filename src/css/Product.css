@@ -1,3 +1,17 @@
-.score {
+/* .score {
   margin-right: 10%;
+} */
+/* .product__sidebar {
+  position: relative;
+} */
+.search__field {
+  position: fixed;
+  width: 100%;
+  left: 5%
+}
+.product__list__pos {
+  position: absolute;
+  top: 10vh;
+  width: 100%;
+  overflow: scroll
 }

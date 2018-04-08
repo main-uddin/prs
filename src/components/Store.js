@@ -6,6 +6,8 @@ import absolutvodka from '../images/absolut-vodka.png'
 import greygoose from '../images/grey-goose.png'
 import russianstandard from '../images/russian-standard.png'
 import pinnaclevodka from '../images/pinnacle-vodka.png'
+import CherryWine from '../images/sona.png'
+import Rum from '../images/rum.png'
 
 const Store = {
   ProductArr: [
@@ -38,7 +40,18 @@ const Store = {
       id: 6,
       name: 'pinnacle-vodka',
       img: window.btoa(pinnaclevodka)
+    },
+    {
+      id: 7,
+      name: 'Cherry-Wine',
+      img: window.btoa(CherryWine)
+    },
+    {
+      id: 8,
+      name: 'Rum',
+      img: window.btoa(Rum)
     }
-  ]
+  ],
+  dialogDataArr: []
 }
 export default observable(Store)

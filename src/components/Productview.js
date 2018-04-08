@@ -8,7 +8,9 @@ import {
   CardActions
 } from 'material-ui/Card'
 import FlatButton from 'material-ui/FlatButton'
+import { observer } from 'mobx-react'
 
+import Store from './Store'
 import '../css/Productview.css'
 
 const actionStyle = {
@@ -16,7 +18,6 @@ const actionStyle = {
 }
 class Productview extends Component {
   render () {
-    const image = this.props.data.image
     return (
       <Card className='card__main'>
         <CardHeader
@@ -30,7 +31,7 @@ class Productview extends Component {
             <CardTitle title='Overlay title' subtitle='Overlay subtitle' />
           }
         >
-          <img className='card__img' src={image} alt='' />
+          <img className='card__img' src={this.props.data.image} alt='' />
         </CardMedia>
         <CardText className='card__text'>
           <h3 className='card__text__h3'>
@@ -45,11 +46,23 @@ class Productview extends Component {
           </p>
         </CardText>
         <CardActions className='card__action' style={actionStyle}>
-          <FlatButton label='Rate' onClick={this.showDialogBox} />
+          <FlatButton label='Rate' onClick={this.showDialogBox} fullWidth />
         </CardActions>
       </Card>
     )
   }
-  showDialogBox = () => this.props.dialogData(true)
+  showDialogBox = e => {
+    this.props.dialogData(true)
+    // const name = e.target.parentElement.parentElement.parentElement.parentElement.children[0].childNodes[0].children[0].childNodes[0].data
+    Store.dialogDataArr.push({
+      name: this.props.data.name,
+      image: this.props.data.image,
+      score: this.props.data.score
+    })
+    console
+      .dir()
+      // e.target.parentElement
+      // e.target.parentElement.parentElement.parentElement.parentElement.childNode[0].children[0].childNode[0].childNode[0].data
+  }
 }
-export default Productview
+export default observer(Productview)
